@@ -6,7 +6,7 @@ void loop() {
     Serial.Write(proxValue);
   midValue = digitalRead(MID); //take sensor values from MID sensor 
     Serial.Write(midValue);
-  DistValue = digitalRead(DIST);
+  DistValue = digitalRead(DIST); // Take sensor values from DIST sensor
     Serial.Write(distValue);
 
   
