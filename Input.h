@@ -1,3 +1,13 @@
+/*
+Input - takes sensor data and Serializes it
+Strickland & Quinlan 
+16/11/2020
+
+*/
+#ifndef Input_h
+#define Input_h
+
+#include "Arduino.h"
 class Input{
 	// READING VALUES
 	int proxValue = digitalRead(PROX);
@@ -35,3 +45,4 @@ class Input{
 		writeValues();
 	}
 }
+#endif
