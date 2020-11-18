@@ -17,3 +17,4 @@ class Sensor {
 	int currentValue;
 }
 #endif
+// Oh my gosh if these tabs don't work I swear I'm going to use spaces.
