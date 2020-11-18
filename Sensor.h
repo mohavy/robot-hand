@@ -6,8 +6,11 @@ Sensor.h – a library to take input from sensors.
 
 #include "Arduino.h"
 class Sensor {
+  public:
+  	Finger(int pin);
+	int turnToAngle();
+	int writeToSerial();
+  private:
+	int _pin;
 }
-
-
-
 #endif
