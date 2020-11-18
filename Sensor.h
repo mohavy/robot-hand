@@ -1,5 +1,6 @@
 /*
-Sensor.h – a library to take input from sensors.
+	Sensor.h – a library to get input from flex sensors.
+	Created by J. C Strickland, 18 Nov. 2020
 */
 #ifndef Sensor_h
 #define Sensor_h
@@ -8,9 +9,11 @@ Sensor.h – a library to take input from sensors.
 class Sensor {
   public:
   	Finger(int pin);
-	int turnToAngle();
-	int writeToSerial();
+	int readSensor();
+	int mapAngle(int data);
+	void writeToSerial(int angle);
   private:
 	int _pin;
+	int currentValue;
 }
 #endif
